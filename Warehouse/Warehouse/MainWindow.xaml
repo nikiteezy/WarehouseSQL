@@ -5,9 +5,9 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Warehouse"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800" WindowStartupLocation="CenterScreen">
+        Title="MainWindow" Height="450" Width="800" WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
     <Grid>
-        <Image Height="485" Width="792" Source="/Resources/main.jpg" RenderTransformOrigin="-3.004,-0.627" Stretch="Fill" Margin="5,0,3,0" VerticalAlignment="Bottom">
+        <Image Height="433" Width="792" Source="/Resources/main.jpg" RenderTransformOrigin="-3.004,-0.627" Stretch="Fill" Margin="5,0,3,0" VerticalAlignment="Center">
             <Image.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -17,9 +17,6 @@
                 </TransformGroup>
             </Image.RenderTransform>
         </Image>
-        <Rectangle x:Name="rectAngel" HorizontalAlignment="Left" Height="376" Margin="28,10,0,0" VerticalAlignment="Top" Width="212" MouseLeftButtonDown="rectAngel_MouseLeftButtonDown"/>
-        <Rectangle HorizontalAlignment="Left" Height="376" Margin="566,10,0,0" VerticalAlignment="Top" Width="212"/>
-        <Rectangle HorizontalAlignment="Center" Height="376" Margin="0,10,0,0" VerticalAlignment="Top" Width="212"/>
-        <Button Content="Button" HorizontalAlignment="Left" Margin="365,167,0,0" VerticalAlignment="Top" Click="Button_Click"/>
+        <Button Content="Персонал" HorizontalAlignment="Left" Margin="605,179,0,0" VerticalAlignment="Top" Click="Button_Click"/>
     </Grid>
 </Window>

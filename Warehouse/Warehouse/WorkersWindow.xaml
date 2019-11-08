@@ -5,11 +5,16 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Warehouse"
         mc:Ignorable="d"
-        Title="WorkersWindow" Height="450" Width="800">
+        Title="WorkersWindow" Height="450" Width="800" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
     <Grid>
-        <TextBox x:Name="txtbox1" HorizontalAlignment="Left" Margin="158,217,0,0" Text="TextBox" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <TextBox x:Name="txtbox2" HorizontalAlignment="Left" Margin="366,217,0,0" Text="TextBox" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" FontFamily="Barlow"/>
-        <Button Content="Button" HorizontalAlignment="Left" Margin="282,290,0,0" VerticalAlignment="Top" RenderTransformOrigin="-4.093,-1.731" Click="Button_Click"/>
+        <Image HorizontalAlignment="Center" Height="468" VerticalAlignment="Top" Width="800" Source="/Resources/staff.jpg"/>
+        <TextBox x:Name="txtBoxFirstName"  Text="First Name" HorizontalAlignment="Left" Margin="5,250,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" FontFamily="Barlow Thin" FontSize="18"/>
+        <TextBox x:Name="txtBoxLastName" Text="Last Name" HorizontalAlignment="Left" Margin="5,279,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" FontFamily="Barlow Thin" FontSize="18"/>
+        <Button x:Name="btnBack" Content="Back" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Barlow Thin" Width="46" Margin="5,5,0,0" Background="#FFD3E7FF" Foreground="#FF799049" FontSize="18" Height="28" Click="btnBack_Click"/>
+        <Button x:Name="btnDismissed" Content="Dismissed" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Barlow Thin" Width="107" Margin="10,164,0,0" Background="#FF799049" Foreground="White" FontSize="18" Height="28" Click="btnDismissed_Click" RenderTransformOrigin="-1.935,0.644"/>
+        <Button x:Name="btnBack_Copy2" Content="Add" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Barlow Thin" Width="120" Margin="4,318,0,0" Background="#FF799049" Foreground="White" FontSize="18" Height="28" Click="AddWorker_Click"/>
+        <DataGrid x:Name="DataGridWorkers" Margin="173,131,10,10"/>
+
 
     </Grid>
 </Window>

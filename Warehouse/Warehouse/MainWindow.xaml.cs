@@ -39,17 +39,11 @@ namespace Warehouse
             }
         }
 
-        private void rectAngel_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
-        {
-            WorkersWindow workersWindow = new WorkersWindow();
-            workersWindow.Show();
-        }
-
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             WorkersWindow workersWindow = new WorkersWindow();
             workersWindow.Show();
-
+            this.Close();
         }
     }
 }

@@ -28,7 +28,7 @@ namespace Warehouse
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            if (TxtBoxLogin.Text == "Admin" && TxtBoxPas.Password == "12345")
+            if (TxtBoxLogin.Text == "Login" && TxtBoxPas.Password == "00000")
             {
                 MainWindow mw = new MainWindow();
                 mw.Show();
