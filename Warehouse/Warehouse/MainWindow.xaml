@@ -17,6 +17,7 @@
                 </TransformGroup>
             </Image.RenderTransform>
         </Image>
-        <Button Content="Персонал" HorizontalAlignment="Left" Margin="605,179,0,0" VerticalAlignment="Top" Click="Button_Click"/>
+        <Button x:Name="BtnPersonal" Content="Peoples" HorizontalAlignment="Left" Margin="620,87,0,0" VerticalAlignment="Top" FontFamily="Barlow Light" FontSize="16" Background="#FFD7FF84" Height="34" Width="95" Click="BtnPersonal_Click"/>
+        <Button x:Name="BtnRooms" Content="Rooms" HorizontalAlignment="Left" Margin="620,126,0,0" VerticalAlignment="Top" FontFamily="Barlow Light" FontSize="16" Background="#FFD7FF84" Height="34" Width="95" Click="BtnRooms_Click"/>
     </Grid>
 </Window>

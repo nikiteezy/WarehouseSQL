@@ -39,11 +39,20 @@ namespace Warehouse
             }
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void BtnPersonal_Click(object sender, RoutedEventArgs e)
         {
             WorkersWindow workersWindow = new WorkersWindow();
             workersWindow.Show();
             this.Close();
         }
+
+        private void BtnRooms_Click(object sender, RoutedEventArgs e)
+        {
+            RoomsWindow roomsWindow = new RoomsWindow();
+            roomsWindow.Show();
+            this.Close();
+        }
+
+
     }
 }

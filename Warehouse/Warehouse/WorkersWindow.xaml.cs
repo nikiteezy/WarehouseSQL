@@ -55,7 +55,9 @@ namespace Warehouse
             MainWindow main = new MainWindow();
             main.Show();
             this.Close();
+
         }
+        
 
         /// <summary>
         /// Делаем запрос к бд и вытягиваем работников с нахваниями складов, где они работают

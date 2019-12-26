@@ -9,6 +9,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using Warehouse.Model;
 
 namespace Warehouse
 {
@@ -28,13 +29,27 @@ namespace Warehouse
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            if (TxtBoxLogin.Text == "Login" && TxtBoxPas.Password == "00000")
+            if (TxtBoxLogin.Text == "Admin" && TxtBoxPas.Password == "12345")
             {
+                User.Name = "Admin";
+                User.Pass = "12345";
+                User.UserStatus = "A";
+
                 MainWindow mw = new MainWindow();
                 mw.Show();
                 this.Close();
             }
-            else 
+            else if(TxtBoxLogin.Text == "NoAdmin" && TxtBoxPas.Password == "12345")
+            {
+                User.Name = "NoAdmin";
+                User.Pass = "12345";
+                User.UserStatus = "N";
+
+                MainWindow mw = new MainWindow();
+                mw.Show();
+                this.Close();
+            }
+            else
             {
                 LoginBtn.Background = new SolidColorBrush(Color.FromArgb(100, 0xFF, 0xa2, 0xd5));
             }

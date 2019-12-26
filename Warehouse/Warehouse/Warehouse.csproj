@@ -7,8 +7,11 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Resources\BtnConnect.jpg" />
     <None Remove="Resources\login.jpg" />
     <None Remove="Resources\main.jpg" />
+    <None Remove="Resources\roomAndStuff.jpg" />
+    <None Remove="Resources\rooms.jpg" />
     <None Remove="Resources\staff.jpg" />
   </ItemGroup>
 
@@ -21,10 +24,19 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Resource Include="Resources\BtnConnect.jpg">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
     <Resource Include="Resources\login.jpg">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
     <Resource Include="Resources\main.jpg">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\roomAndStuff.jpg">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\rooms.jpg">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
     <Resource Include="Resources\staff.jpg">
