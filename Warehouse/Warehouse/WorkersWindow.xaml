@@ -12,7 +12,7 @@
         <TextBox x:Name="txtBoxLastName" Text="Last Name" HorizontalAlignment="Left" Margin="5,279,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" FontFamily="Barlow Thin" FontSize="18"/>
         <Button x:Name="btnBack" Content="Back" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Barlow Thin" Width="46" Margin="5,5,0,0" Background="#FFD3E7FF" Foreground="#FF799049" FontSize="18" Height="28" Click="btnBack_Click"/>
         <Button x:Name="btnDismissed" Content="Dismissed" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Barlow Thin" Width="107" Margin="10,164,0,0" Background="#FF799049" Foreground="White" FontSize="18" Height="28" Click="btnDismissed_Click" RenderTransformOrigin="-1.935,0.644"/>
-        <Button x:Name="btnBack_Copy2" Content="Add" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Barlow Thin" Width="120" Margin="4,318,0,0" Background="#FF799049" Foreground="White" FontSize="18" Height="28" Click="AddWorker_Click"/>
+        <Button x:Name="btnAdd" Content="Add" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Barlow Thin" Width="120" Margin="4,318,0,0" Background="#FF799049" Foreground="White" FontSize="18" Height="28" Click="AddWorker_Click"/>
         <DataGrid x:Name="DataGridWorkers" Margin="440,130,10,32"/>
 
 

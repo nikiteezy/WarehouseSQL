@@ -43,6 +43,21 @@ namespace Warehouse
             _dbContext = new ApplicationContext();
 
             DataGridSetValue();
+
+            if (User.UserStatus == "N")
+            {
+                btnDismissed.Visibility = Visibility.Hidden;
+                txtBoxFirstName.Visibility = Visibility.Hidden;
+                txtBoxLastName.Visibility = Visibility.Hidden;
+                btnAdd.Visibility = Visibility.Hidden;
+            }
+            else if (User.UserStatus == "A") 
+            {
+                btnDismissed.Visibility = Visibility.Visible;
+                txtBoxFirstName.Visibility = Visibility.Visible;
+                txtBoxLastName.Visibility = Visibility.Visible;
+                btnAdd.Visibility = Visibility.Visible;
+            }
         }
 
         /// <summary>
